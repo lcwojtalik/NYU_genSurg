@@ -207,6 +207,4 @@ if st.button("📌 Assign Basic Rotations"):
     schedule = assign_basic_rotations(schedule, residents_df, rotations_df)
     st.success("Basic rotations assigned!")
     st.dataframe(schedule, use_container_width=True)
-st.download_button("⬇️ Download Final Schedule", schedule.to_csv(index=False), file_name="final_schedule.csv")
-else:
-    st.warning("Please complete resident and rotation input to proceed.")
+    st.download_button("⬇️ Download Final Schedule", schedule.to_csv(index=False), file_name="final_schedule.csv"), file_name="final_schedule.csv")
